@@ -38,9 +38,9 @@ export default class RideScreen extends Component {
     const { status } = await Permissions.askAsync(Permissions.CAMERA);
 
     this.setState({
-      /*status === "granted" é verdadeiro se o usuário concedeu permissão
-          status === "granted" é falso se o usuário não concedeu permissão
-        */
+      
+        
+        
       hasCameraPermissions: status === "granted",
       domState: "scanner",
       scanned: false
@@ -73,25 +73,11 @@ export default class RideScreen extends Component {
           // Apenas para Android
           // No iOS utilize o Alert.alert
 
-          // show(
-          //   "Você alugou a bicicleta pela próxima 1 hora. Aproveite seu passeio!!",
-          //   ToastAndroid.SHORT
-          // );
-
-          // ToastAndroid.show(
-          //   "Você alugou a bicicleta pela próxima 1 hora. Aproveite seu passeio!!",
-          //   ToastAndroid
-          // );
-
-          // ToastAndroid.show(
-          //   "Você alugou a bicicleta pela próxima 1 hora. Aproveite seu passeio!!",
-          //   SHORT
-          // );
-
-          // ToastAndroid.show(
-          //   "Você alugou a bicicleta pela próxima 1 hora. Aproveite seu passeio!!",
-          //   ToastAndroid.SHORT
-          // );
+          
+          ToastAndroid.show(
+            Alert.alert("Você alugou a bicicleta pela próxima 1 hora. Aproveite seu passeio!!",)
+             
+          );
 
          // Alert.alert(
          //   "Você alugou a bicicleta pela próxima 1 hora. Aproveite seu passeio!!"
@@ -107,10 +93,10 @@ export default class RideScreen extends Component {
 
           // Apenas para Android
 
-          // ToastAndroid.show(
-          //   "Esperamos que tenha gostado do seu passeio",
-          //   ToastAndroid.SHORT
-          // );
+          ToastAndroid.show(
+             "Esperamos que tenha gostado do seu passeio",
+             ToastAndroid.SHORT
+          );
 
           Alert.alert("Esperamos que tenha gostado do seu passeio");
           this.setState({
