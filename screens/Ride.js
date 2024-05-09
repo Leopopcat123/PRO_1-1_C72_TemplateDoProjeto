@@ -229,7 +229,7 @@ export default class RideScreen extends Component {
             <TextInput
               style={[styles.textinput, { width: "82%" }]}
 
-              //onChangeText={() => this.setState({ userId: text })}
+              onChangeText={() => this.setState({ userId: text })}
               //onChangeText={this.setState({ userId: text })}
               //onChangeText={text => this.setState({ userId: text })}
               //onChangeText={(text) => this.setState({ userId: text })}
